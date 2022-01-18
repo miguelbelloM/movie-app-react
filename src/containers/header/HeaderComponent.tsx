@@ -15,6 +15,9 @@ import { RootState } from '../../Store';
 //REQUEST
 import {GetMoviesList} from "../../requests/MovieRequest";
 
+//LABELS
+import EN_LABEL from "../../string/en";
+
 function HeaderComponent(){
     const dispatch = useDispatch();
     const movies = useSelector((state: RootState) => state.movies);
@@ -34,7 +37,7 @@ function HeaderComponent(){
                     </Grid>
                     <Grid item xs={7}></Grid>
                     <Grid item xs={3}>
-                        <TextField onChange={handleChange} id="outlined-basic" label="Search Movie" variant="outlined" />
+                        <TextField onChange={handleChange} id="outlined-basic" label={EN_LABEL.header.searchMovie} variant="outlined" />
                     </Grid>
                 </Grid>
             </Box>
