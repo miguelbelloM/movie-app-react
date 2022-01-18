@@ -4,7 +4,7 @@ import {
     MOVIES_FAIL,
     MOVIES_SUCCESS,
 } from "../actions/MoviesActios";
-import {MoviesDispatchTypes} from  "../containers/movies/MoviesType";
+import {MoviesDispatchTypes} from  "../reducers/movie/MoviesType";
 import middlware from "../middleware/middleware";
 
 export const GetMoviesList = (movieTextFilter: string) => async (dispatch: Dispatch<MoviesDispatchTypes>) => {

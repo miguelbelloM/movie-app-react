@@ -1,6 +1,5 @@
 import {
     Box,
-    TextField,
     Grid
 } from '@mui/material';
 
@@ -10,11 +9,11 @@ function FooterContainer(){
             <Box sx={{ flexGrow: 1 }} className='footer-information'>
                 <Grid container spacing={3}>
                     <Grid item xs={4} className='icon'>
-                        <strong>GitHub User</strong>
+                        <strong>GitHub: </strong>
                         <a href="https://github.com/miguelbelloM">miguelbelloM</a>
                     </Grid>
                     <Grid item xs={4}>
-                        <strong>Email:</strong>
+                        <strong>Email: </strong>
                         <a href="mailto:miguelbellomunevar@gmail.com">miguelbellomunevar@gmail.com</a>
                     </Grid>
                     <Grid item xs={4}>
@@ -28,7 +27,7 @@ function FooterContainer(){
                     <hr />
                 </Grid>
                 <Grid item xs={12} className='date'>
-                    <strong>2022</strong>
+                    <strong>Redux, Typescript, React, Jest</strong>
                 </Grid>
             </Box>
         </footer>

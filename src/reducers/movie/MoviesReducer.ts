@@ -1,7 +1,7 @@
 import {
     MoviesDispatchTypes,
     MoviesType,
-} from "../containers/movies/MoviesType";
+} from "./MoviesType";
 
 interface DefaultStateI {
     loading: boolean,

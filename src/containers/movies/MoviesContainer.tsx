@@ -1,6 +1,6 @@
 import { useSelector } from 'react-redux';
 import { RootState } from '../../Store';
-import { MovieResultsType } from "./MoviesType";
+import { MovieResultsType } from "../../reducers/movie/MoviesType";
 import * as React from 'react';
 import {
   Box,

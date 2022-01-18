@@ -28,7 +28,7 @@ function HeaderComponent(){
                     </Grid>
                     <Grid item xs={7}></Grid>
                     <Grid item xs={3}>
-                        <TextField onChange={handleChange} id="outlined-basic" label="Movie" variant="outlined" />
+                        <TextField onChange={handleChange} id="outlined-basic" label="Search Movie" variant="outlined" />
                     </Grid>
                 </Grid>
             </Box>

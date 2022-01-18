@@ -24,7 +24,7 @@ export type MovieResultsType = {
     popularity: number,
     vote_count: number,
     video: boolean,
-    vote_average: number
+    vote_average: number,
 }
 
 export type MoviesDispatchTypes = {
