@@ -1,26 +1,24 @@
 import {
     Box,
-    Autocomplete,
     TextField,
     Grid
 } from '@mui/material';
 import TheaterComedyIcon from '@mui/icons-material/TheaterComedy';
-import React, { useState } from 'react';
+import React, { useEffect } from 'react';
 import {useDispatch, useSelector } from 'react-redux';
 import { RootState } from '../../Store';
 import {GetMoviesList} from "../../requests/MovieRequest";
 
 function HeaderComponent(){
     const dispatch = useDispatch();
-    const [movieTextFilter, setMovieTextFilter] = useState("movie");
     const movies = useSelector((state: RootState) => state.movies);
-
+    useEffect(() => {
+        dispatch(GetMoviesList("marvel"))
+    },[])
     const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         
-        setMovieTextFilter(event.target.value);
         event.target.value != "" && dispatch(GetMoviesList(event.target.value));
     }
-    console.log(movies)
     return (
         <div className='header-component'>
             <Box sx={{ flexGrow: 1 }}>

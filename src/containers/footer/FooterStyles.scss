@@ -1,0 +1,22 @@
+.footer{
+
+    padding: 70px 0px 20px 0px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    position: inherit;
+    bottom: 0;
+    width: 100%;
+    
+    .footer-information{
+        margin-bottom: 50px;
+    }
+
+    a{
+        color: white;
+        text-decoration: none;
+    }
+    .date{
+        margin-top: 20px;
+    }
+}

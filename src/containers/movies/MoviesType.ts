@@ -10,7 +10,7 @@ export type MoviesType = {
     results: MovieResultsType[]
 }
 
-type MovieResultsType ={
+export type MovieResultsType = {
     poster_path: string,
     adult: boolean,
     overview: string,

@@ -1,0 +1,13 @@
+.movie-list-container{
+    padding: 0px 20px;
+    .MuiPaper-root{
+        background-color: black;
+    }
+    .MuiPaper-root,
+    .MuiCardContent-root,
+    .MuiTypography-root,
+    .MuiCardActions-root,
+    .MuiIconButton-root{
+        color: white;
+    }
+}
