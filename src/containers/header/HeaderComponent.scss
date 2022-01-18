@@ -1,0 +1,20 @@
+.header-component{
+    background-color: $primary-color;
+    padding: 10px 0 10px 60px;
+    .icon{
+        color: white;
+        .logo-icon{
+            font-size: 55px;
+        }
+    }
+    .MuiInputLabel-root,
+    .MuiInputLabel-shrink.Mui-focused,
+    .MuiOutlinedInput-input,
+    .MuiOutlinedInput-notchedOutline,
+    .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline,
+    .MuiButtonBase-root,
+    .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline{
+        color: white;
+        border-color: white;
+    }
+}
