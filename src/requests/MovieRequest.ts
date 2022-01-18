@@ -9,6 +9,7 @@ import middlware from "../middleware/middleware";
 
 export const GetMoviesList = (movieTextFilter: string) => async (dispatch: Dispatch<MoviesDispatchTypes>) => {
     try {
+        //loading request
         dispatch({
             type: MOVIES_LOADING,
         }) 
@@ -20,13 +21,14 @@ export const GetMoviesList = (movieTextFilter: string) => async (dispatch: Dispa
                 page: "1",
             }
         });
+        //success request
         dispatch({
             type: MOVIES_SUCCESS,
             data: res.data,
         }) 
         
     } catch (error) {
-        console.error(error)
+        console.error("Error in MovieRequest.ts", error)
         dispatch({
             type: MOVIES_FAIL,
         }) 
