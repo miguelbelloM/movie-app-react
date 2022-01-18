@@ -1,13 +1,17 @@
 import { useSelector } from 'react-redux';
-import { RootState } from '../../Store';
-import { MovieResultsType } from "../../reducers/movie/MoviesType";
-import * as React from 'react';
+
+//LIBS
 import {
   Box,
   Grid,
 } from '@mui/material';
-import CardComponent from "../../components/Card/CardComponent";
 
+//COMPONENTS
+import CardComponent from "../../components/card/CardComponent";
+
+//REDUCER
+import { RootState } from '../../Store';
+import { MovieResultsType } from "../../reducers/movie/MoviesType";
 
 function MoviesContainer() {
   const movies = useSelector((state: RootState) => state.movies);

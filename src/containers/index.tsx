@@ -1,3 +1,4 @@
+//COMPONENTS
 import MoviesContainer from "./movies/MoviesContainer";
 import HeaderComponent from "./header/HeaderComponent";
 import FooterContainer from "./footer/FooterContainer";

@@ -1,12 +1,18 @@
+import React, { useEffect } from 'react';
+
+//LIBS
 import {
     Box,
     TextField,
     Grid
 } from '@mui/material';
 import TheaterComedyIcon from '@mui/icons-material/TheaterComedy';
-import React, { useEffect } from 'react';
 import {useDispatch, useSelector } from 'react-redux';
+
+//REDUCER
 import { RootState } from '../../Store';
+
+//REQUEST
 import {GetMoviesList} from "../../requests/MovieRequest";
 
 function HeaderComponent(){
